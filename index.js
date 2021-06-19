@@ -23,7 +23,7 @@ function next(){
 function showProcess(date) {
     var year = date.getFullYear();
     var month = date.getMonth();
-    document.querySelector('#header').innerHTML = year + "年 " + (month + 1) + "月";
+    document.querySelector('#header').innerHTML = year.toString(2) + "年 " + (month + 1).toString(2) + "月";
 
     var calendar = createProcess(year, month);
     document.querySelector('#calendar').innerHTML = calendar;
@@ -50,20 +50,20 @@ function createProcess(year, month) {
         for (var j = 0; j < week.length; j++) {
             if (i == 0 && j < startDayOfWeek) {
                 
-                calendar += "<td class='disabled'>" + (lastMonthEndDate - startDayOfWeek + j + 1) + "</td>";
+                calendar += "<td class='disabled'>" + "<a href='createplan.html'>" + (lastMonthEndDate - startDayOfWeek + j + 1).toString(2) + "</a>" + "</td>";
             } else if (count >= endDate) {
                 
                 count++;
-                calendar += "<td class='disabled'>" + (count - endDate) + "</td>";
+                calendar += "<td class='disabled'>" + "<a href='createplan.html'>" + (count - endDate).toString(2) + "</a>" + "</td>";
             } else {
                 
                 count++;
                 if(year == today.getFullYear()
                   && month == (today.getMonth())
                   && count == today.getDate()){
-                    calendar += "<td class='today'>" + count + "</td>";
+                    calendar += "<td class='today'>" + "<a href='createplan.html'>" + count.toString(2) + "</a>" + "</td>";
                 } else {
-                    calendar += "<td>" + count + "</td>";
+                    calendar += "<td>" + "<a href='createplan.html'>" + count.toString(2) + "</a>" + "</td>";
                 }
             }
         }
