@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="stylesheet_createplan.css">
+  <script src="./node_modules/nicojs/lib/nico.js"></script>
 </head>
 <body>
+  <div id="app"></div>
   <table>
     <tr><td>
-    <input type="text" name="input_title" placeholder="タイトルを入力">
+    <input type="text" name="input_title" id="comment" placeholder="タイトルを入力">
     </td></tr>
     <tr><td>
     <select>
@@ -23,7 +25,7 @@
     <select>
       <script>
         for(var i=00; i<=59; i+=5){
-          document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
+          document.write('<option onclick="set_startminute('+i.toString(2)+')" value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
         }
       </script>
     </select>
@@ -52,9 +54,10 @@
     </td></tr>
   </div>
   <tr><td>
-  <input class="submit" type="submit" value="作成">
+  <input class="submit" id="btn" type="submit" value="作成">
   </td></tr>
 </table>
+<script src="sample.js"></script>
 </body>
 </html>
 
