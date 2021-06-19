@@ -21,6 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "mysql2": "^2.2.5",
+    "nicojs": "^1.1.8",
     "sequelize": "^6.6.2"
   }
 }
