@@ -1,0 +1,15 @@
+#email {
+    border: solid;
+    margin-top: 50px;
+}
+
+.passwordForm {
+    margin-left: 35px;
+}
+#password {
+    margin-left: 23px ;
+    border: solid;
+}
+.Form {
+    text-align: center;
+}
