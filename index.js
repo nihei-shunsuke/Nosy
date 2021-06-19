@@ -48,9 +48,8 @@ function createProcess(year, month) {
         calendar += "<tr>";
         
         for (var j = 0; j < week.length; j++) {
-            if (i == 0 && j < startDayOfWeek) {
-                
-                calendar += "<td class='disabled'>" + "<a href='createplan.html'>" + (lastMonthEndDate - startDayOfWeek + j + 1).toString(2) + "</a>" + "</td>";
+            if (i == 0 && j < startDayOfWeek) {                 
+              calendar += "<td class='disabled'>" + "<a href='createplan.html'>" + (lastMonthEndDate - startDayOfWeek + j + 1).toString(2) + "</a>" + "</td>";
             } else if (count >= endDate) {
                 
                 count++;
