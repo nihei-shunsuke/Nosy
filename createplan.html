@@ -8,43 +8,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>新規予定の作成</h1>
-  <div class="title">
-    <h2>タイトル</h2>
     <input type="text" name="input_title" placeholder="タイトルを入力">
-  </div>
-  <h2>日時</h2>
-  <div class="DateContainer">
-    <div class="date">
-      <select class=”start_hour” name="start_hour">
-        <option value="1">1</option>
-      </select>
-      <p>時</p>
-    </div>
-    <div class="date">
-      <select class=”start_minute” name=”start_minute”>
-        <option value="1">1</option>
-      </select>
-      <p>分</p>
-    </div>
-    <p>〜</p>
-    <div class="date">
-      <select class=”end_hour” name="end_hour">
-        <option value="1">1</option>
-      </select>
-      <p>時</p>
-    </div>
-    <div class="date">
-      <select class=”end_minute” name=”minute”>
-        <option value="1">1</option>
-      </select>
-      <p>分</p>
-    </div>
-  </div>
-  <div class="spot">
-    <h2>場所</h2>
+    <select>
+      <script>
+        for(var i=00; i<=23; i++){
+          document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'時</option>');
+        }
+      </script>
+    </select>
+    <select>
+      <script>
+        for(var i=00; i<=59; i+=5){
+          document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
+        }
+      </script>
+    </select>
+    <span>～</span>
+    <select>
+      <script>
+        for(var i=00; i<=23; i++){
+          document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'時</option>');
+        }
+      </script>
+    </select>
+    <select>
+      <script>
+        for(var i=00; i<=59; i+=5){
+          document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
+        }
+      </script>
+    </select>
     <input type="text" name="input_spot" placeholder="場所を入力">
-    <script type="js/script.js"></script>
   </div>
   <input type="submit" value="作成">
 </body>
