@@ -8,7 +8,31 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <input type="text" name="input_title" placeholder="タイトルを入力">
+    <input id="postForm" type="text" name="input_title" placeholder="タイトルを入力">
+    <script>
+      const url = 'https://local:host/plans';
+      const fetchForm = document.getElementById('postForm');
+      let formData = new FormData(fetchForm);
+      for (let value of formData.entries()) {
+        console.log(value);
+    }
+      const postData = () =>{
+        fetch(url, {
+         method: "POST",
+         body  : formData
+        }).then(response => response.formData())
+        .then(text => {
+         console.log(text);
+});
+      }
+    </script>
+
+
+
+
+
+
+
     <select>
       <script>
         for(var i=00; i<=23; i++){
@@ -40,7 +64,7 @@
     </select>
     <input type="text" name="input_spot" placeholder="場所を入力">
   </div>
-  <input type="submit" value="作成">
+  <input type="submit" value="作成" onclick="">
 </body>
 </html>
 
