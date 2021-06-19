@@ -6,6 +6,7 @@
     max-height:900;
     margin: 0 auto;
     color: rgb(46, 45, 45);
+
 }
 #header {
     text-align: center;
@@ -13,6 +14,7 @@
     height:100%;
     width: 100%;
     margin: 1rem 0 0;
+    color: #34423b;
 }
 
 /*カレンダー*/
@@ -30,7 +32,7 @@ th {
     color: #000;
 }
 th, td {
-    border: 1px solid #ddd;
+    border: 5px solid rgb(138, 135, 135);
     padding-top: 50px;
     padding-bottom: 10px;
     text-align: center;
@@ -49,7 +51,7 @@ td.disabled {
 }
 /*本日*/
 td.today {
-    background-color: #dbf565;
+    background-color: #C0BCFF;
     color: rgb(0, 0, 0);
 }
 
