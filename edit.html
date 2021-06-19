@@ -5,16 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="stylesheet_createplan.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <table>
-    <tr><td>
     <input type="text" name="input_title" placeholder="タイトルを入力">
-    </td></tr>
-    <tr><td>
     <select>
-      <script class="timeHours">
+      <script>
         for(var i=00; i<=23; i++){
           document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'時</option>');
         }
@@ -27,16 +23,7 @@
         }
       </script>
     </select>
-  </td></tr>
-  <tr><td>
     <span>～</span>
-  </td></tr>
-  <tr><td>
-    </td></tr>
-    <tr><td>
-    <span class="rotate">↓</span>
-    </td></tr>
-    <tr><td>
     <select>
       <script>
         for(var i=00; i<=23; i++){
@@ -51,20 +38,9 @@
         }
       </script>
     </select>
-    </td></tr>
-    <tr><td>
     <input type="text" name="input_spot" placeholder="場所を入力">
-    </td></th>
-  <tr><td>  
   </div>
   <input type="submit" value="作成">
-  </td></tr>  
-    </td></tr>
-  </div>
-  <tr><td>
-  <input class="submit" type="submit" value="作成">
-  </td></tr>
-</table>
 </body>
 </html>
 
