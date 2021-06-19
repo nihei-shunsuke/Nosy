@@ -1,6 +1,6 @@
 let nico = new nicoJS({
     app       : document.getElementById('app'),
-    width     : 600,
+    width     : 1500,
     height    : 400,
     font_size : 50,     // opt
     color     : '#000'  // opt
@@ -16,6 +16,5 @@ document.getElementById('btn').onclick = function() {
 }
 
 function set_startminute(minute) {
-    startminute = minute;
     return minute;
 }
