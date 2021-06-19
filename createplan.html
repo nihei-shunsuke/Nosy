@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>新規予定の作成</h1>
+  <div class="title">
+    <h2>タイトル</h2>
+    <input type="text" name="input_title" placeholder="タイトルを入力">
+  </div>
+  <h2>日時</h2>
+  <div class="DateContainer">
+    <div class="date">
+      <select class=”start_hour” name="start_hour">
+        <option value="1">1</option>
+      </select>
+      <p>時</p>
+    </div>
+    <div class="date">
+      <select class=”start_minute” name=”start_minute”>
+        <option value="1">1</option>
+      </select>
+      <p>分</p>
+    </div>
+    <p>〜</p>
+    <div class="date">
+      <select class=”end_hour” name="end_hour">
+        <option value="1">1</option>
+      </select>
+      <p>時</p>
+    </div>
+    <div class="date">
+      <select class=”end_minute” name=”minute”>
+        <option value="1">1</option>
+      </select>
+      <p>分</p>
+    </div>
+  </div>
+  <div class="spot">
+    <h2>場所</h2>
+    <input type="text" name="input_spot" placeholder="場所を入力">
+    <script type="js/script.js"></script>
+  </div>
+  <input type="submit" value="作成">
+</body>
+</html>
+

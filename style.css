@@ -77,3 +77,15 @@ td.today {
 #next {
     float: right;
 }
+
+.date {
+  display: flex;
+  flex-direction: row;
+}
+
+.DateContainer {
+  display: flex;
+  flex-direction: row;
+
+}
+
