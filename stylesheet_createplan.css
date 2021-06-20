@@ -21,3 +21,15 @@ tr {
     text-align: center;
     margin: 75px;
 }
+.fill {
+    margin-top: -500px;
+}
+.todolist {
+    margin-left: 800px;
+    margin-bottom: 0px;
+    margin-top: -300px;
+    width: 350px;
+    height: 10px;
+    border: solod;
+    border-collapse: collapse;
+}
