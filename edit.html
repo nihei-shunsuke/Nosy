@@ -10,7 +10,7 @@
 <body>
     <input id="postForm" type="text" name="input_title" placeholder="タイトルを入力">
     <script>
-      const url = 'https://local:host/plans';
+      const url = 'https://localhost:3000/plans';
       const fetchForm = document.getElementById('postForm');
       let formData = new FormData(fetchForm);
       for (let value of formData.entries()) {
