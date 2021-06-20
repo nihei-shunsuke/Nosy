@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="app"></div>
-  <table>
+  <table class="fill">
     <tr><td>
     <input type="text" name="input_title" id="comment" placeholder="タイトルを入力">
     </td></tr>
@@ -54,9 +54,13 @@
     </td></tr>
   </div>
   <tr><td>
-  <input class="submit" onclick="execution();setTimeout(execution(),3000);" id="btn" type="submit" value="作成">
+  <input class="submit" onclick="execution();execution();execution();execution();add()" id="btn" type="submit" value="作成">
   </td></tr>
 </table>
+<table>
+  <tr><th>タイトル</th><th>開始時間</th><th>終了時間</th><th>メモ</th></tr>
+</table>
+<div id="addtodo"></div>
 <script src="sample.js"></script>
 </body>
 </html>
