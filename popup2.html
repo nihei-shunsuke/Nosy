@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calender</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="popup.js"></script>
+    <script src="index.js"></script>
+
+<body>
+    <!--ポップアップ始め-->
+    <input type="button" id="btn" value="押す"> <!-- 変数に格納 -->
+    <div id="box"> <!-- 変数に格納 -->
+        <p id="close">× <!-- 変数に格納 -->
+            <!--入力フォーム始め-->
+            <div id="app"></div>
+            <table class="inputFomm">
+              <tr><td>
+              <input type="text" name="input_title" id="comment" placeholder="タイトルを入力">
+              </td></tr>
+              <tr><td>
+              <select id="starthour">
+                <script class="timeHours">
+                  for(var i=00; i<=23; i++){
+                    document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'時</option>');
+                  }
+                </script>
+              </select>
+              <select id="startminute">
+                <script>
+                  for(var i=00; i<=59; i+=5){
+                    document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
+                  }
+                </script>
+              </select>
+              </td></tr>
+              <tr><td>
+              <span class="rotate">↓</span>
+              </td></tr>
+              <tr><td>
+              <select id="endhour">
+                <script>
+                  for(var i=00; i<=23; i++){
+                    document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'時</option>');
+                  }
+                </script>
+              </select>
+              <select id="endminute">
+                <script>
+                  for(var i=00; i<=59; i+=5){
+                    document.write('<option value="'+i.toString(2)+'">'+i.toString(2)+'分</option>');
+                  }
+                </script>
+              </select>
+              </td></tr>
+              <tr><td>
+              <input id="memo"　type="text" name="input_spot" placeholder="メモ">
+              </td></tr>
+            </div>
+            <tr><td>
+            <input class="submit" onclick="execution();setTimeout(execution(),3000);" id="btn" type="submit" value="作成">
+            </td></tr>
+          </table>
+          <script src="sample.js"></script>
+          <!--入力フォーム終わり-->
+        </p>
+    </div>
+    <!--ポップアップ終わり-->
+    <div class="wrapper">
+        <!--xxxx年xx月を表示-->
+        <div class="class1">
+            <img src="image/NoSy.png" width="125px" height="130px">
+                </div>
+        <h1 id="header"></h1>
+
+        <!--ボタンクリックで月移動-->
+    <div id="next-prev-button">
+        <button id="prev" onclick="prev()">‹</button>
+        <button id="next" onclick="next()">›</button>
+    </div>
+
+    <!--カレンダー-->
+    <div id="calendar"></div>
+    </div>
+</body>
+</html>

@@ -6,6 +6,7 @@ var showDate = new Date(today.getFullYear(), today.getMonth(), 1);
 
 window.onload = function () {
     showProcess(today, calendar);
+    initPopup();
 };
 
 function prev(){
